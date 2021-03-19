@@ -21,7 +21,7 @@ class MainApplication {
 		
 		
 	//condition to start the game
-		start: if(userResponse.toLowerCase().equals("yes")) {
+		 if(userResponse.toLowerCase().equals("yes")) {
 		
 			Player player = game.getPlayerInfo();	//player object  declared and initialised
 			
