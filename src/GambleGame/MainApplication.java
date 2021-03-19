@@ -15,13 +15,13 @@ class MainApplication {
 		Game game = new Game();   //game object declared which manages interaction and gathers player infor 
 		Casino casino = new Casino();   // casino object declared
 		
-		System.out.print("Hello new user,Do you want to play the game   ");
+		System.out.print("Hello new user,Do you want to play the game(yes/no)   ");
 		Scanner scanner = new Scanner(System.in);   // scanner object declared
 		userResponse = scanner.nextLine();
 		
 		
 	//condition to start the game
-		if(userResponse.toLowerCase().equals("yes")) {
+		start: if(userResponse.toLowerCase().equals("yes")) {
 		
 			Player player = game.getPlayerInfo();	//player object  declared and initialised
 			
@@ -46,6 +46,9 @@ class MainApplication {
 			System.out.print("\n"+ "Round "+x + " " +summaryData.get(x)+" wins ");
 		
 	}
+		
+		
+		
 	
 	}
 }
