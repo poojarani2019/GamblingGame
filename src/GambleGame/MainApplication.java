@@ -10,6 +10,15 @@ import java.util.Scanner;
 class MainApplication {
 
 	public static void main(String[] args) {
+			
+		OrganizeNewGame();
+	
+	}
+	
+	
+	public static void OrganizeNewGame() {
+		
+		
 		String userResponse;
 		ArrayList<String> summaryData = new ArrayList<String>();
 		Game game = new Game();   //game object declared which manages interaction and gathers player infor 
@@ -21,7 +30,8 @@ class MainApplication {
 		
 		
 	//condition to start the game
-		 if(userResponse.toLowerCase().equals("yes")) {
+		 if(userResponse.toLowerCase().equals("yes"))   // case sensitive input
+		 {
 		
 			Player player = game.getPlayerInfo();	//player object  declared and initialised
 			
@@ -46,9 +56,8 @@ class MainApplication {
 			System.out.print("\n"+ "Round "+x + " " +summaryData.get(x)+" wins ");
 		
 	}
+			
 		
-		
-		
-	
 	}
+	
 }

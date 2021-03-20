@@ -28,6 +28,7 @@ public class Casino {
 	}
 
 	private int promptUserForTheirGuess() {
+		
 		System.out.print("\nPlease enter your guess  ");
 		Scanner scanner = new Scanner(System.in);
 		int userResponse;

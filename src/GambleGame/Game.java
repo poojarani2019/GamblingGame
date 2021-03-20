@@ -4,14 +4,17 @@ import java.util.Scanner;
 
 public class Game {
 	
-	public Player getPlayerInfo() {
+	
+	String playerName;
+	int playerAge;
+	String userResponse;
+	Scanner scanner = new Scanner(System.in);
+	
+	
+		public Player getPlayerInfo() {
 		
-		String playerName;
-		int playerAge;
-		String userResponse;
 		boolean isValid = false;
 		
-		Scanner scanner = new Scanner(System.in);
 		Player player = new Player(); //player object declared 
 		
 		System.out.print("Please enter Player Name   ");
@@ -29,6 +32,8 @@ public class Game {
 				System.out.print("Player age is : " + userResponse);
 				isValid = true;
 				System.out.print("\nAll set now please guess the number between 1 and 100");
+				System.out.print("\nAnd I will Guess a game");
+				System.out.print("\nIf you guess in 10 of my guess: then you will win else I win!");
 				
 				
 			}
